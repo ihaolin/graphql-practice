@@ -1,0 +1,20 @@
+schema {
+    query: Query
+}
+
+# The Root Query for the application
+type Query {
+    getUser(id: Long!): User
+    getUsers: [User]
+}
+
+# The Root Mutation for the application
+type Mutation {
+    addUser(name: String!, age: Int!) : Long!
+}
+
+type User {
+    id: Long!
+    name: String!
+    age: Int!
+}

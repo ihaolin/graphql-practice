@@ -1,0 +1,5 @@
+### Default Environment ###
+
+server:
+  port: 9999
+
